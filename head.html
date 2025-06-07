@@ -15,7 +15,7 @@
       trichy
     </address>
     <header>
-    <p><h2>daiy schedule</h2></p>
+    <h2>daiy schedule</h2>
     <figure>
     <img src="img/download.jfif" alt="workout" height="250" width="300" title="one arm rowing">
     <figcaption>workout</figcaption>
@@ -35,7 +35,7 @@
     <main>
     <article id="CT" >
       <ol type="A" > 
-        Chest + triceps<br>
+        <p>Chest + triceps</p>
       <img src="img/download (1).jfif" alt="chest" width="100" height="100" title="chest press">
       <li> Chest press</li>
       <li> incline press </li>
@@ -67,7 +67,7 @@
           <summary>
             Click here
           </summary>
-          <p>Where is your motivation?
+          <p>Where is your <mark>motivation?</mark>
           </p>
           <img src="img/vergil.jfif" alt="vergil" title="im vergiling it">
         </details>
@@ -109,8 +109,114 @@
         <dd>calves</dd>
       </dl>
     </section>
+    <h4>ROUTINE</h4>
+    <table border="1">
+      <caption>My daily schedule</caption>
+      <thead>
+      <tr>
+        <th>&nbsp;</th>
+        <th>TIME</th>
+        <th>Activity</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Morning</td>
+        <td>8am-11m</td><td>Write code</td>
+      </tr>
+      <tr>
+        <td>break</td>
+        <td>11am-12pm</td><td>Eat lunch</td>
+      </tr>
+      <tr>
+        <td>afternoon</td>
+        <td>12pm-5pm</td><td>Study for other courses</td>
+      </tr>
+      <tr>
+        <td>Evening</td>
+        <td>5pm-7pm</td><td>Go gym</td>
+      </tr>
+      <tr>
+        <td rowspan="2">night</td>
+        <td rowspan="2">All the other time</td>
+        <td >FREE TIME</td>
+      </tr>
+      <tr>
+        <td>sleep</td>
+      </tr>
+      <tfoot>
+        <tr>
+          <td colspan="3">Thats all for today...do it evryday..fuck of</td>
+        </tr>
+      </tfoot>
+    </tbody>
+    </table>
+    
     </main>
     <hr>
+    <fieldset>
+    <legend>use of fieldset and legend tags</legend>
+    <p>some forms examples</p>
+    <label for="coffee">Favorurite coffee</label>
+    <select name="coffee" id="coffee" mulitple size="5">
+      <optgroup label="coffees">
+        <option value="regular coffee">regular coffee</option>
+        <option value="iced coffee">iced coffee</option>
+      </optgroup>
+      <optgroup label="espresso Drinks">
+        <option value="latte" selected>Latte</option>
+        <option value="cappuccino">cappuccino</option>
+        <option value="cortado">cortado</option>
+        <option value="americano">americano</option>
+      </optgroup>
+    </select><br>
+    
+    <label for="coffee">favourite coffee</label>
+    <input type="text" name="coffee" id="coffee" list="coffee-list">
+    <datalist id="coffee-list">
+      <option value="coffee">
+      <option value="latte">
+      <option value="espresso">
+      <option value="cortado">
+      <option value="americano">
+      <option value="other">
+    </datalist>
+    </fieldset><br>
+    <fieldset>
+      <legend>Your faviourte food "using radio"</legend>
+      <input type="radio" name="food" id="tacos" value="tacos">
+      <label for="tacos">tacos</label><br>
+      <input type="radio" name="food" id="briyani" value="briyani">
+      <label for="briyani">briyani</label><Br>
+      <input type="radio" name="food" id="Dosa" value="Dosa">
+      <label for="Dosa">Dosa</label><br>
+    </fieldset>
+    <fieldset>
+     <legend>DO you have petd</legend>
+     <p>
+      <input type="checkbox" name="pet" id="dog" value="dog">
+      <label for="dog">DOG</label>
+
+     </p>
+     <p>
+      <input type="checkbox" name="pet" id="cat" value="cat">
+      <label for="cat">CAT</label>
+      
+     </p>
+     <p>
+      <input type="checkbox" name="pet" id="other" value="other">
+      <label for="other">other</label>
+      
+     </p>
+    </fieldset>
+    <fieldset>
+      <legend>Send me a feedback</legend>
+      <label for="Msg">Message</label>
+      <textarea name="Msg" rows="10" cols="30" placeholder="Type your message here"></textarea> 
+    </fieldset><br>
+    <fieldset>
+      <input type="submit">
+    </fieldset>
     <footer>
     
     <a href="register.html"> register for course</a><br>
