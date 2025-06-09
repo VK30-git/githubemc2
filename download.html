@@ -1,0 +1,91 @@
+# Recreate the HTML content for the CSS cheat sheet
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Cheat Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            background: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        pre {
+            background: #fff;
+            padding: 15px;
+            border: 1px solid #ccc;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Cheat Sheet</h1>
+
+    <h2>1. CSS Syntax</h2>
+    <pre>selector {
+  property: value;
+}</pre>
+
+    <h2>2. Types of CSS</h2>
+    <pre>
+- Inline: &lt;p style="color:red;"&gt;Text&lt;/p&gt;
+- Internal:
+  &lt;style&gt;
+    p {color:red;}
+  &lt;/style&gt;
+- External:
+  &lt;link rel="stylesheet" href="style.css"&gt;
+    </pre>
+
+    <h2>3. Selectors</h2>
+    <pre>
+*         (Universal)
+p, h1     (Element)
+.class    (Class)
+#id       (ID)
+div p     (Descendant)
+    </pre>
+
+    <h2>4. Box Model</h2>
+    <p>content, padding, border, margin</p>
+
+    <h2>5. Fonts and Text</h2>
+    <pre>font-size, font-weight, font-family, text-align, color</pre>
+
+    <h2>6. Backgrounds and Colors</h2>
+    <pre>background-color, color, background-image</pre>
+
+    <h2>7. Width/Height/Borders</h2>
+    <pre>width, height, border, border-radius</pre>
+
+    <h2>8. Display and Positioning</h2>
+    <pre>display: block | inline | flex | grid
+position: static | relative | absolute | fixed | sticky</pre>
+
+    <h2>9. Flexbox Example</h2>
+    <pre>.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}</pre>
+
+    <h2>10. Media Queries (Responsive)</h2>
+    <pre>@media (max-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+}</pre>
+
+</body>
+</html>
+"""
+
+html_path = "/mnt/data/CSS_Cheat_Sheet.html"
+with open(html_path, "w", encoding="utf-8") as file:
+    file.write(html_content)
+
+html_path

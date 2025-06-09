@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Animated Landing Page</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+    p {
+      font-size: 1.5rem;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+      animation-delay: 2s;
+    }
+    button {
+      margin-top: 30px;
+      padding: 1rem 2rem;
+      font-size: 1.25rem;
+      border: none;
+      border-radius: 30px;
+      background: #ff6f91;
+      color: white;
+      cursor: pointer;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+      animation-delay: 4s;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    button:hover {
+      background: #ff3c78;
+      transform: scale(1.1);
+    }
+    .background-circles {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .circle {
+      position: absolute;
+      bottom: -100px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      animation: floatUp 10s linear infinite;
+    }
+    .circle:nth-child(1) {
+      left: 10%;
+      width: 50px;
+      height: 50px;
+      animation-delay: 0s;
+    }
+    .circle:nth-child(2) {
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      animation-delay: 3s;
+    }
+    .circle:nth-child(3) {
+      left: 80%;
+      width: 75px;
+      height: 75px;
+      animation-delay: 1.5s;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0);
+        opacity: 0.4;
+      }
+      100% {
+        transform: translateY(-110vh);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background-circles">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+
+  <h1>Welcome to my landing page</h1>
+  <p>Let’s build something awesome together!</p>
+  <button>Get Started</button>
+
+</body>
+</html>
