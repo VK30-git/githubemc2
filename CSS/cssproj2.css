@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+li,ul{
+    display: inline;
+}
+li{
+    color: cyan;
+}
+li:hover{
+    color: white;
+    cursor: pointer;
+}
+img{
+    width: 220px;
+    height: 300px;
+}
+.box{
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    display: inline-block;
+    width: 220px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.ordernow{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+}
+.ordernow:hover{
+    background-color: white;
+    color: black;
+}
+.box:hover{
+    background-color: black;
+    color: white;
+}
+.products{
+   text-align: center;
+   margin: 50px;
+}
+.contact{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+button{
+    background-color: yellow;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
