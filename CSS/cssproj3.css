@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    background-color: darkslategray;
+}
+.titlebar{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.gallery div{
+    width: 200px;
+    color: white;
+    margin: 10px;
+    flex-basis: 20%; 
+}
+img{
+    width: 200px;
+    height: 200px;
+}
