@@ -1,0 +1,58 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .one{
+        background-color: yellow;
+        height: 100px;
+        flex-basis: 100%;
+        margin: 5px;
+    }
+    .two,.three,.four{
+        background-color: blueviolet;
+        height: 100px;
+        flex-basis: 30%;
+        margin: 2px;
+    }
+    .five,.six,.seven,.eight{
+        background-color:aqua;
+        height: 100px;
+        flex-basis: 20%;
+        margin: 5px;
+    }
+    @media screen and (max-width:600px){
+        .one{
+            flex-basis: 100%;
+        }
+        .two,.three,.four{
+            flex-basis: 100%;
+        }
+        .five,.six,.seven,.eight{
+            flex-basis: 40%;
+        }
+    }
+    @media screen and (max-width:400px){
+        .one{
+            flex-basis: 100%;
+        }
+        .two,.three,.four{
+            flex-basis: 100%;
+        }
+        .five,.six,.seven,.eight{
+            flex-basis: 100%;
+        }
+    }
+</style>
+<div class="container">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>   
+    <div class="four"></div>
+    <div class="five"></div>
+    <div class="six"></div>
+    <div class="seven"></div>
+    <div class="eight"></div>
+</div>
