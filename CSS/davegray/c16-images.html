@@ -1,0 +1,109 @@
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: aliceblue;
+        /* background-image: url(bubbles.jpg),linear-gradient(to right,steelblue, white); 
+        background-repeat: repeat-y, no-repeat;
+        background-position: right center;
+        background-size: 20%, auto; */
+    }
+    .container{
+        background-color: rgb(251,210,156);
+        background-image: url(images.jpeg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center center; /* X an Y cordinates or we can provide only one value it self */
+    }
+    .hero{
+        border-bottom: 2px solid black;
+        padding: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px  ;
+        background-color: hsla(0, 0%, 0%, 0.493);
+    }
+    .h1{
+        font-size: 50px;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+       /*  background-color: hsla(0, 0%, 0%, 0.493);
+        padding: 0.25rem;
+        border-radius: 10px; */
+    }
+      .profile-pic-figure{
+        width: 25%;
+    }
+    .profile-pic-figure img{
+        width: 100%;
+        height: auto;
+        min-width: 100px;
+        border: 5px double grey;
+        border-radius: 50%;
+    } 
+    img{
+        display: block;
+       
+    }
+    .nowrap{
+        white-space: nowrap;
+    }
+    .offscreen{
+        position: absolute;
+        left: -10000px;
+    }
+    .example{
+        margin-top: 1rem;
+        padding-left: 20px;
+        border: 1px solid red;
+    }
+    .example img{
+        width:25%;
+        height: auto;
+    }
+    .clip{
+        font-weight: 800;
+        font-size: 18rem;
+        text-align: center;
+        background-image: url(images.jpeg);
+        background-size: 100%;
+        text-transform: uppercase;
+        -webkit-background-clip: text   ;
+        background-clip: text;
+        color: hsla(0, 0%, 0%, 0);
+    }
+  
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div class="container">
+    <section class="hero">
+        <figure class="profile-pic-figure">
+            <img src="https://picsum.photos/200/204" alt="Profile Picture" width="800" height="800">
+            <figcaption class="offscreen">Profile Picture</figcaption>
+        </figure>
+        <h1 class="h1">
+            <span class="nowrap">Hello</span>
+            <span class="nowrap">IM vishal</span>
+        </h1>
+    </section>
+    </div> -->
+  <!--   <section class="example">
+            <img src="ferrari.jfif" alt="Ferrari" width="200" height="200">
+
+    </section> -->
+    <section>
+        <p class="clip">VISHAL</p>
+    </section>
+</body>
+</html>
