@@ -1,35 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VK Modules</title>
+    <title>VK Modulas</title>
     <link rel="stylesheet" href="project1.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-amber-50">
-    <header class="bg-teal-700 text-white sticky top-0 z-10">
+    <header class="bg-linear-to-r from-cyan-500 to-blue-500 sticky top-0 z-10">
         <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
             <h1 class="text-3xl font-medium">
-               <a href="#hero">🖥️VK Modules</a></h1>
+               <a href="#hero">🖥️VK Modulas</a></h1>
                <div>
-                    <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none">&#9776;</button>
-                    <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
-                        <a href="#modules" class="hover:opacity-80">Our Modules</a>
+                    <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer relative w-8 h-8"><!-- &#9776; -->
+                        <div class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:transition-all before:duration-500 before:-translate-x-4 before:-translate-y-3
+                      after:bg-white after:w-8 after:h-1 after:rounded after:absolute   after:transition-all after:duration-500 after:-translate-x-4  after:translate-y-3"></div>
+                    </button>
+                    <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
+                        <a href="#modules" class="hover:opacity-80">Our Projects</a>
                         <a href="#testimonials" class="hover:opacity-80">Testimonials</a>
                         <a href="#contact" class="hover:opacity-80">Contact</a>
                     </nav>
                </div>
         </section>
+        <section id="mobile-menu" class="absolute top-18 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-fade-in-scale hidden">
+            <!-- <button class="text-8xl self-end px-6">
+                &times;
+            </button> -->
+            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <a href="#hero" class="w-full text-center py-6 hover:opacity-70">Home</a>
+                <a href="#modules" class="w-full text-center py-6 hover:opacity-70">Our Projects</a>
+                <a href="#testimonials" class="w-full text-center py-6 hover:opacity-70">Testimonials</a>
+                <a href="#contact" class="w-full text-center py-6 hover:opacity-70">Contact Us</a>
+                <a href="#footer" class="w-full text-center py-6 hover:opacity-70">Legal</a>
+            </nav>
+        </section>
     </header>
     <main class="max-w-4xl mx-auto">
-        <section id="hero" class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12">
+        <section id="hero" class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
             <article class="sm:w-1/2">
                 <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-amber-50">
                     We Do <span class="text-indigo-700 dark:text-indigo-700">System Modification</span>For Both Embedded and Non-Embedded Devices
                 </h2>
                 <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
-                    Welcome to VK Modules – Your Upgrade Starts Here!
-                    At VK Modules, we specialize in transforming ordinary systems into high-performance powerhouses.
+                    Welcome to VK Modulas – Your Upgrade Starts Here!
+                    At VK Modulas, we specialize in transforming ordinary systems into high-performance powerhouses.
                 </p>
                 <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
                     Ready to level up your tech? You’re in the right place.
@@ -38,43 +54,100 @@
             <img class="w-1/2" src="animate.png" alt="Computer png">
         </section>
         <hr class="mx-auto bg-black dark:bg-white w-1/2">
-        <section id="rockets" class="p-6 my-12">
+        <section id="modules" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
             <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
                 Our Projects
             </h2>
-            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8 ">
                 <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
-                    <img src="img/memory.png" alt="" class="mb-6">
+                    <img src="img/memory.png" alt="" class="h-48 w-auto mb-6">
                     <h3 class="text-3xl text-center text-slate-900 dark:text-white">NAND for Mac</h3>
                     <p class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400">$</p>
                     <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">Affordable storage expansion</p>
                 </li>
                 <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
-                    <img src="img/memory.png" alt="" class="mb-6">
-                    <h3 class="text-3xl text-center text-slate-900 dark:text-white">NAND for Mac</h3>
-                    <p class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400">$</p>
-                    <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">Affordable storage expansion</p>
+                    <img src="img/pc.png" alt="water-cooled-pc" class="h-48 w-auto mb-6">
+                    <h3 class="text-3xl text-center text-slate-900 dark:text-white">Custom Loops</h3>
+                    <p class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400">$$</p>
+                    <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">Best sustainable cooling blocks</p>
                 </li>
                 <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
-                    <img src="img/memory.png" alt="" class="mb-6">
-                    <h3 class="text-3xl text-center text-slate-900 dark:text-white">NAND for Mac</h3>
-                    <p class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400">$</p>
-                    <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">Affordable storage expansion</p>
+                    <img src="img/overclock.png" alt="overclocking" class="mb-6 ">
+                    <h3 class="text-3xl text-center text-slate-900 dark:text-white">Overclock- CPU & GPU</h3>
+                    <p class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400">$$$</p>
+                    <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">Suitable overclocking upto your requirments</p>
                 </li>
             </ul>
         </section>
         <hr class="mx-auto bg-black dark:bg-white w-1/2">
-        <section id="testimonials" class="p-6 my-12">
+        <section id="testimonials" class="p-6 my-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
             <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
                 Testimonials
             </h2>
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transfrom before:translate-x-2 before-translate-y-2  after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transfrom after:-translate-x-2 after:-translate-y-2">
+                        VK Modulas took my outdated setup and made it feel brand new. Lightning-fast performance and zero hiccups I’m seriously impressed!
+                    </p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+                        &#8212;Rahul M., Freelance Designer
+                </figcaption>
+            </figure>
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transfrom before:translate-x-2 before-translate-y-2  after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transfrom after:-translate-x-2 after:-translate-y-2">
+                        I had no idea my system could run this smoothly. The upgrade was seamless, and the support was even better. Highly recommended!
+                    </p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+                        &#8212;Neha S., Small Business Owner
+                </figcaption>
+            </figure>
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transfrom before:translate-x-2 before-translate-y-2  after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transfrom after:-translate-x-2 after:-translate-y-2">
+                        From consultation to delivery, VK Modulas exceeded my expectations. Professional, efficient, and results that speak for themselves.
+                    </p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+                        &#8212;Arjun K., Tech Enthusiast
+                </figcaption>
+            </figure>
         </section>
         <hr class="mx-auto bg-black dark:bg-white w-1/2">
-        <section id="contact" class="p-6 my-12">
+        <section id="contact" class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height">
             <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
                 Contact Us
             </h2>
+            <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your subject" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none dark:bg-white " />
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none dark:bg-white"></textarea>
+                <button class="bg-teal-700 hover:bg-teal-500 active:bg-teal-400 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none">Submit</button>
+            </form>
         </section>
     </main>
+    <footer id="footer" class="bg-linear-to-r from-cyan-500 to-blue-500 text-white text-xl">
+        <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+            <address>
+                <h2>VK Modulas</h2>
+                4,Ganapathi nagar 5th cross<br>
+                kamparasampet, Trichy -620101 <br>
+                Email :<a href="sugumaradvocatessv30@gmail.com">sugumaradvocatessv30@gmail</a><br>
+                Phone :<a href="tel:+917010760435">70107-60435</a>
+            </address>
+            <nav class="hidden md:flex flex-col gap-2 " aria-label="footer">
+                <a href="#modules" class="hover:opacity-90">Our Projects</a>
+                <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+                <a href="#contact" class="hover:opacity-90">Contact</a>
+            </nav> 
+            <div class="flex flex-col sm:gap-2">
+                <p class="text-right">Copyright &copy;<span id="year">2022</span></p>
+                <p class="text-right">All Rights Reserverd</p>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
