@@ -1,0 +1,51 @@
+<!-- <input id="box" onkeyup="update()">
+<button onclick="update()">Btn</button>
+<h1 id="result"></h1>
+<script>
+    var box=document.getElementById("box")
+    var result=document.getElementById("result")
+    function update(){
+        result.textContent=box.value
+    }
+</script> 
+<button onclick="update()">Add</button>
+<div id="result"></div>
+<script>
+    var div=document.getElementById("result")
+    function update(){
+        var it=document.createElement("h1")
+        it.textContent="hello"
+        div.append(it)
+    }
+</script>
+
+<button id="btn" onclick="update()">Change color</button>
+<script>
+    var btn=document.getElementById("btn")
+    function update(){
+        btn.style.backgroundColor="red"
+    }
+</script>
+<h1 id="result"></h1>
+<button id="jhon" onclick="update(event)">John</button>
+<button id="praveen" onclick="update(event)">Praveen</button>
+<button id="vishal" onclick="update(event)">Vishal</button>
+<script>
+    var h1=document.getElementById("result")
+    function update(event){
+        h1.textContent=event.target.textContent 
+    }
+</script>-->
+
+<h1  onclick="del(event)">ONe</h1>
+<h1  onclick="del(event)">two</h1>
+<h1  onclick="del(event)">THree</h1>
+<h1  onclick="del(event)">Four</h1>
+<h1  onclick="del(event)">Five</h1>
+<h1  onclick="del(event)">six</h1>
+<script>
+
+    function del(event){
+        event.target.remove()
+    }
+</script>
