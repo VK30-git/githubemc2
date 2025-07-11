@@ -1,0 +1,30 @@
+<!-- <div>
+    <h1>Vishal</h1>
+</div>
+<script>
+    var div= document.querySelector("div")
+    div.append("hello")
+</script> -->
+
+<!-- add css later -->
+<input id="inputcont">
+<button onclick="add()">
+    add
+</button>
+<ul id="listcont">
+    <li>hello
+        <button onclick="deleteitem(event)">delete</button>
+    </li>
+</ul>
+<script>
+    var ul=document.getElementById("listcont")
+    var inp=document.getElementById("inputcont")
+    function add(){
+        var listitem=document.createElement("li")
+        listitem.innerHTML=inp.value+"<button onclick='deleteitem(event)'>delete</button>"
+        ul.append(listitem)
+    }
+    function deleteitem(event){
+        event.target.parentElement.remove()
+    }
+</script>
