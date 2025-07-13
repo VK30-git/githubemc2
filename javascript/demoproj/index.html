@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LibraHub</title>
+  <link rel="stylesheet" href="./output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="poppins-regular">
+  <div class="bg-amber-600 p-2.5">
+    <h1 class="text-white text-3xl font-bold">LibraHUB</h1>
+  </div>
+  <div class="container mx-auto mt-6 mb-auto inline-block">
+    <div class="book-container bg-white p-4 shadow-md rounded-lg align-top">
+      <h2 class="text-xl font-semibold">Rich Dad, Poor Dad</h2>
+      <h5 class="text-sm text-gray-600">Robert</h5>
+      <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, modi!</p>
+      <button onclick="deletebk(event)" class="mt-3 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">Delete</button>
+    </div>
+  </div>
+  <div class="popup-overlay">
+  </div>
+  <div class="popup-box">
+        <h2 class="text-amber-50 text-2xl font-bold">Add book</h2>
+        <form>
+            <input placeholder="Book name" id="book-title-input">
+            <input placeholder="Book author" id="book-author-input">
+            <textarea placeholder="short description" id="book-description-input"></textarea>
+            <button class="bg-amber-950 pl-5 pr-5 border-none pt-2.5 pb-2.5 text-amber-50 m-1.5" id="addbook">Add</button>
+            <button class="bg-amber-950 pl-5 pr-5 border-none pt-2.5 pb-2.5 text-amber-50 m-1.5" id="cancel-popup">Cancel</button>
+        </form>
+  </div>
+  <button class="bg-amber-600 text-amber-50 rounded-[100%] px-7 py-5 text-[25px] fixed bottom-8 right-8" id="add-popup-button">+</button>
+  <script src="script.js"></script>
+</body>
+</html>

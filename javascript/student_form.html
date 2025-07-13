@@ -1,0 +1,81 @@
+
+<!-- uncompleted -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+    <center>
+    <h1> STUDENT FORM</h1>
+    <table border="2">
+        <tr>
+            <td>Name</td>
+            <td><input id="name" required></td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td><input id="age" type="number" required></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input class="Gender" type="radio" name="Gender" required>Male
+                <input class="Gender" type="radio" name="Gender" required>Female
+            </td>
+        </tr>
+        <tr>
+            <td>Course</td>
+           <td>
+                <select id="course" required>
+                <option>Full stack</option>
+                <option>Front end</option>
+                <option>Backend</option>
+                <option>DevOPS</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>
+                <input id="mailaddress" type="email" required>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><center><button colspan="2" onclick="add()">Save</button></center></td>
+        </tr>
+    </table>
+    </center>
+    </form>
+    <br>
+    <center>
+    <table id="save" border="1">
+        <tr>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Course</td>
+            <td>Gender</td>
+            <td>Email</td>
+            <td>Action</td>
+        </tr>
+    </table>
+    </center>
+</body>
+</html>
+<script>
+    var name=document.getElementById("name").value
+    var age=document.getElementById("age").value
+    var gender=document.getElementsByClassName("Gender").value
+    var course=document.getElementById("course").value
+    var email=document.getElementById("mailaddress").value
+    var table=document.getElementById("save")
+    function add(){
+        var details=document.createElement("tr")
+        details.innerHTML="<td>name</td><td>age</td><td>gender</td><td>course</td><td>email</td><td><button class="delete-btn">Delete</button></td>;"
+        table.appendChild(details)
+    }
+</script>
